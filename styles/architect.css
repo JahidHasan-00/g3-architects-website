@@ -117,8 +117,29 @@ main{
     width: 542px;
 }
 
-
-
+/* Facts Cards Style */
+.facts-card-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0 180px 0;
+}
+.card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    padding: 45px 35px 59px 35px;
+    text-align: center;
+}
+.card h2{
+    margin: 10px 10px;
+}
+.card .card-title{
+    font-size: 1.5rem;
+}
+.card-stats{
+    color: #424242;
+    font-size: 2.9rem;
+    font-weight: 600;
+}
 
 /* media query style */
 
