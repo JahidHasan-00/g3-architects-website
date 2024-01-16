@@ -269,6 +269,10 @@ main{
     .ten-years-badge{
         position: static;
     }
+    .footer-content{
+        padding: 20px 15px;
+        width: 100%;
+    }
 }
 
 /* Tablet / Mobile devices */
@@ -290,6 +294,9 @@ main{
     }
     .facts-card-container{
         gap: 20px;
+        flex-direction: column;
+        padding: 20px;
+
     }
     .sponsors-img-container img{
         width: 166.757px;
