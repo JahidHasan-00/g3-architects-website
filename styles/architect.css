@@ -29,6 +29,7 @@
     color: #131313;
     font-size: 2.8rem;
     font-weight: 700;
+
 }
 
 /* Header styling */
@@ -101,13 +102,70 @@ main{
     color:  #727272;
     font-weight: 500;
 }
-.teams-content .features{
+.teams-content .span-features{
     color: #FF900E;
     font-weight: 700;
 }
 .teams-content > p{
     margin: 24px 0 32px 0;
 }
+
+
+/* Features style */
+.features{
+    display: flex;
+    margin-top: 130px;
+    gap: 30px;
+}
+.features .section-title{
+    margin: 20px 0 24px 0;
+    padding-left: 20px;
+    border-left: 5px solid #FF900E;
+}
+.features-card{
+    color:  #727272;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 30px 0 20px 0;
+    padding: 30px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.features .features-card > p{
+    margin-top: 10px;
+}
+.features-card > h4{
+    color: #131313;
+    font-size: 20px;
+    font-weight: 600;
+}
+.ten-years-badge{
+    color: #FFF;
+    padding: 46px 42px;
+    border-radius: 8px;
+    background: #FF900E;
+    width: 250px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+.ten-years-badge h2{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.ten-years-badge p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.features-img img{
+    margin-left: 50px;
+}
+.features-container{
+    /* display: flex; */
+}
+
+
 
 /* Facts styles */
 .facts{
@@ -155,6 +213,19 @@ main{
     justify-content: space-evenly;
 }
 
+/* Footer styles */
+.footer-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.footer-content{
+    text-align: center;
+    border-radius: 8px;
+    background: #FFF4E7;
+    padding: 38px 100px;
+    width: 55%;
+}
 /* media query style */
 
 /* Mobile Devices or Small Devices */
@@ -190,6 +261,19 @@ main{
         width: 166.757px;
         height: 50px;
     }
+    .features-container{
+        padding-left: 20px;
+    }
+    .features{
+        flex-direction: column;
+    }
+    .features-img img{
+        margin-left: 0;
+        width: 100%;
+    }
+    .ten-years-badge{
+        position: static;
+    }
 }
 
 /* Tablet / Mobile devices */
@@ -215,5 +299,12 @@ main{
     .sponsors-img-container img{
         width: 166.757px;
         height: 50px;
+    }
+    .features{
+        flex-direction: column;
+    }
+    .features-img img{
+        margin-left: 0;
+        width: 100%;
     }
 }
